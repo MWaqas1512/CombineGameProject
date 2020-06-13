@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 100831fbff56cbc46968744b7f28cc05
+=======
+<<<<<<< Updated upstream:CombineGameProject/Assets/assets/Modern Weapons Pack/ACOG Sight/FBX/Materials.meta
+guid: b2a1984d44a51174c8f692b9cbc9fdba
+=======
+guid: 100831fbff56cbc46968744b7f28cc05
+>>>>>>> Stashed changes:CombineGameProject/Assets/assets/Modern Weapons Pack/ACOG Sight/Textures.meta
+>>>>>>> Stashed changes
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
