@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float HealthPoints
     {
-        
+        get { return healthPoints; }
+        set
+        {
+            healthPoints = value;
+            if (healthPoints < 0)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField]
+    private float healthPoints = 100f;
 }
