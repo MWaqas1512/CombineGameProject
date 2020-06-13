@@ -130,6 +130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 22479811}
+  - component: {fileID: 22479812}
   m_Layer: 0
   m_Name: bulletHolder
   m_TagString: Untagged
@@ -145,12 +146,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22479810}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 5.099999, y: -2.1676996, z: -0.20001268}
+  m_LocalPosition: {x: 4.9, y: 2, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1286952281}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &22479812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22479810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85d4f43302298a44a3c54914510678f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 7334431527392411666, guid: d2aa1e77851d4f4408c12466db981373, type: 3}
 --- !u!1 &47128434
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,6 +336,7 @@ GameObject:
   - component: {fileID: 383225714}
   - component: {fileID: 383225713}
   - component: {fileID: 383225712}
+  - component: {fileID: 383225716}
   m_Layer: 0
   m_Name: Capsule (1)
   m_TagString: enemy
@@ -398,12 +413,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 383225711}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 80, y: 2.4882812, z: -21.517982}
+  m_LocalPosition: {x: 80, y: 2.4882812, z: -8.1}
   m_LocalScale: {x: 3, y: 5, z: 2}
   m_Children: []
   m_Father: {fileID: 1252285609}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &383225716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383225711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f7b82c669acfe4b9a5c9254e0e8d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 100
 --- !u!1 &560211003
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,6 +444,7 @@ GameObject:
   - component: {fileID: 560211006}
   - component: {fileID: 560211005}
   - component: {fileID: 560211004}
+  - component: {fileID: 560211008}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: enemy
@@ -492,12 +521,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560211003}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 75, y: 2.4882812, z: -21.517982}
+  m_LocalPosition: {x: 75, y: 2.4882812, z: -8.099998}
   m_LocalScale: {x: 3, y: 5, z: 2}
   m_Children: []
   m_Father: {fileID: 1252285609}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &560211008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560211003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f7b82c669acfe4b9a5c9254e0e8d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 100
 --- !u!1 &1124452987
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,6 +552,7 @@ GameObject:
   - component: {fileID: 1124452990}
   - component: {fileID: 1124452989}
   - component: {fileID: 1124452988}
+  - component: {fileID: 1124452992}
   m_Layer: 0
   m_Name: Capsule (4)
   m_TagString: enemy
@@ -586,12 +629,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124452987}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 70, y: 2.4882812, z: -21.517982}
+  m_LocalPosition: {x: 70, y: 2.4882812, z: -8.099998}
   m_LocalScale: {x: 3, y: 5, z: 2}
   m_Children: []
   m_Father: {fileID: 1252285609}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1124452992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124452987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f7b82c669acfe4b9a5c9254e0e8d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 100
 --- !u!1 &1196438078
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +660,7 @@ GameObject:
   - component: {fileID: 1196438081}
   - component: {fileID: 1196438080}
   - component: {fileID: 1196438079}
+  - component: {fileID: 1196438083}
   m_Layer: 0
   m_Name: Capsule (5)
   m_TagString: enemy
@@ -680,12 +737,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196438078}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 63, y: 2.4882812, z: -21.517982}
+  m_LocalPosition: {x: 63, y: 2.4882812, z: -8.099998}
   m_LocalScale: {x: 3, y: 5, z: 2}
   m_Children: []
   m_Father: {fileID: 1252285609}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1196438083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196438078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f7b82c669acfe4b9a5c9254e0e8d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 100
 --- !u!1 &1252285608
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,7 +780,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1252285608}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 315, y: -0.7441406, z: 81.51798}
+  m_LocalPosition: {x: 315, y: 2.2, z: 81.51798}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 560211007}
@@ -735,7 +805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ccac3f45f8b36dc4196bc991b941ea8e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 390
+      value: 390.6
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ccac3f45f8b36dc4196bc991b941ea8e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -797,6 +867,7 @@ GameObject:
   - component: {fileID: 1496482160}
   - component: {fileID: 1496482159}
   - component: {fileID: 1496482158}
+  - component: {fileID: 1496482162}
   m_Layer: 0
   m_Name: Capsule (3)
   m_TagString: enemy
@@ -873,12 +944,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496482157}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 94, y: 2.4882812, z: -21.517982}
+  m_LocalPosition: {x: 94, y: 2.4882812, z: -8.099998}
   m_LocalScale: {x: 3, y: 5, z: 2}
   m_Children: []
   m_Father: {fileID: 1252285609}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1496482162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496482157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f7b82c669acfe4b9a5c9254e0e8d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 100
 --- !u!1 &1521484007
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,6 +1067,7 @@ GameObject:
   - component: {fileID: 1904760221}
   - component: {fileID: 1904760220}
   - component: {fileID: 1904760219}
+  - component: {fileID: 1904760223}
   m_Layer: 0
   m_Name: Capsule (2)
   m_TagString: enemy
@@ -1059,9 +1144,22 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904760218}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 89, y: 2.4882812, z: -21.517982}
+  m_LocalPosition: {x: 89, y: 2.4882812, z: -8.099998}
   m_LocalScale: {x: 3, y: 5, z: 2}
   m_Children: []
   m_Father: {fileID: 1252285609}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1904760223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904760218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f7b82c669acfe4b9a5c9254e0e8d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 100
