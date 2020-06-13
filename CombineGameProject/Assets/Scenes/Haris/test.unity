@@ -1174,4 +1174,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 072359a6b9ff49f4fb1ae7b04fc85140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   Bullet: {fileID: 3231867552201991719, guid: 91b3c471238ab7247be9cbeb6fe510d3, type: 3}
+=======
+  bulletSpeed: 3100
+  Bullet: {fileID: 3231867552201991719, guid: 91b3c471238ab7247be9cbeb6fe510d3, type: 3}
+  bulletAudio: {fileID: 0}
+>>>>>>> Stashed changes
